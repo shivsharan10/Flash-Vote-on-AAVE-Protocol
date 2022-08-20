@@ -1,6 +1,6 @@
 ## Flash-Vote-on-AAVE-Protocol
 
-![screenshot](aave.jpeg)
+![screenshot](aave.jpg)
 
 By using AAVE's flash loans to borrow 100k DAI and use it to buy governance tokens, vote with the tokens and then sell the tokens back.  All of this will happen in the span of one transaction.
 
