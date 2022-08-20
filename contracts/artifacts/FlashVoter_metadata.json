@@ -1,0 +1,198 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Govern",
+						"name": "_governanceToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_proposalId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "premiums",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "executeOperation",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "flashVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "governanceToken",
+				"outputs": [
+					{
+						"internalType": "contract Govern",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proposalId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FlashVoter.sol": "FlashVoter"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DataTypes.sol": {
+			"keccak256": "0x6a668f066e456f12b81a992c6eca86c4a49e03bb3e15786ae8764b23ef88d75f",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://90605674861978afe9f05e3bb1efff96904dec1939fd7ee33bdcb3ee0fb357ae",
+				"dweb:/ipfs/QmaCesiybWCuowTBrhkuFcWmrswt9GLmJbodzKgcNpZhiY"
+			]
+		},
+		"contracts/ERC20.sol": {
+			"keccak256": "0x43f7e58188e3e1620e0b4f0c8a4e7e8edbac051cf704fa3541d3052e35303899",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4d2a72dd55cf354200b07e2d7eb96a7d8a6256517c9061d7bc382319f99388d3",
+				"dweb:/ipfs/QmQ6fTCRu6vrfku4E8y7QpK12pjoApNwSyfNAAP14A3J1z"
+			]
+		},
+		"contracts/FlashVoter.sol": {
+			"keccak256": "0x3cb2159252f7468930116e5d6274af13d4ee726f01708a0b7c5d0bf5d978ef88",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f63998de404ee3e631dc1c0390d8c82fa1008b285e6fc0370e9f6645fa592606",
+				"dweb:/ipfs/QmcdHwPfECkJ41aUo49ydRrE3EfbiM5T5kLFGKCqJK3pga"
+			]
+		},
+		"contracts/Govern.sol": {
+			"keccak256": "0x72fe314ccfaaa0dd5eb318600f22846c0e263f86cbe91820829cd882c5ed190e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a262b2137c33ad7e8b498d1c17c6573e38836641614e05ea1b23e1f8d2aa6fa0",
+				"dweb:/ipfs/QmdJezZfNP99MeiLtbMkqPHFMkEwr6tDEtwdA2CKC7J9HF"
+			]
+		},
+		"contracts/IERC20.sol": {
+			"keccak256": "0x277a2a39bde09099640a51f9f63a41529f4c2032b6556b05994acb850144708c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://78a800812b76e7615b44939d26c785e19e659273eadc3d6e1ad4f806247456ba",
+				"dweb:/ipfs/QmdfZYR249qpgFR2HTtQ6W2wrG7gvAP338BJATkVmWzn8J"
+			]
+		},
+		"contracts/ILendingPool.sol": {
+			"keccak256": "0x357264864f733aa9885c0a9383c17e26ff1b93aa35646afda6aa5b6766be983f",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://c0315567a3fe036125bde5fca5555e2a05e149a6cda1b401331bdac2b6339468",
+				"dweb:/ipfs/Qmbt2zTBse4tcmJtyZHsyELUGSBTBzTWpeHnLR8ZjEuoW6"
+			]
+		},
+		"contracts/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0x7c37eb915648caf31d3868e464942651818a599543678ad4a790d5c388a1d0ce",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://9204d277981968f123c98c99e6b49f86ea64f5c7e52e4d26fca23b10c6dd6b15",
+				"dweb:/ipfs/QmSvCpRrrUHajSXXk9TVnckwJwAnkApK2UQayBhTzoW6qN"
+			]
+		},
+		"contracts/extensions/IERC20Metadata.sol": {
+			"keccak256": "0x746a2bfbe582b80b5e84d1641f62d00f3d1df2ccb066175019e47813bfc1bb93",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f659c234f91fd63c4b8c4a15575dd327131b941ec07ae371292f066e856110d",
+				"dweb:/ipfs/QmPmCRCWXSAysk29Wt6n9vaJBUKCrLiocyXwDXyiChfEVa"
+			]
+		},
+		"utils/Context.sol": {
+			"keccak256": "0x2c36c9489879b7c91cdd73bbe8b2584f401aa26f4f252c04f053e824d6ca75c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ef20575fc12fd27f252acd28a8d0f65893832f29fd9c82f7ec165121af4572f",
+				"dweb:/ipfs/QmZMCoWWDTjhs1CNFMWv4JNWVyyeuzyqteCHhF4heCUYJJ"
+			]
+		}
+	},
+	"version": 1
+}
